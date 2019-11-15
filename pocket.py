@@ -7,14 +7,14 @@
 
 class Pocket():
 
-    def __init__():
+    def __init__(self):
         pass
 
-    def perform_oauth():
+    def perform_oauth(self):
         pass
 
-    def get_list(tags):
+    def get_list(self,tags):
         pass
 
-    def format_item(item):
+    def format_item(self, item):
         pass
