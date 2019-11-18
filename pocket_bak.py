@@ -143,10 +143,15 @@ class PocketHandler:
             print("DEBUG: Filtering with tag '{}'.".format(tag))
         values = self.create_values({'state': 'all', 'tag': tag})
         json = self.get_json(values, get_url)['list']
+
         if not json:
-            print("No results.")
+            return None
         else:
-            self.print_json(json)
+            return (json)
+        #if not json:
+        #    print("No results.")
+        #else:
+        #    self.print_json(json)
 
     def list_unread(self):
         values = self.create_values({'state': 'unread'})
