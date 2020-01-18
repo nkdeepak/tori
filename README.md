@@ -8,3 +8,9 @@
  3. Asks the friend what would be his interests so that those specific tagged articles can be fetched
 
 
+ ##### Config
+
+ MongoDB as docker
+    -- docker run -d -p 27017:27017 -v ~/data:/data/db mongo
+
+
